@@ -64,3 +64,10 @@ Le réseau visé est celui de Wings par défaut : `pterodactyl0`, `172.18.0.0/16
 - Les images et vidéos ne sont pas analysées, seulement les noms de fichiers et les textes.
 - Les sites passés par Cloudflare peuvent être couverts en plus par le *CSAM Scanning Tool* de Cloudflare.
 - Les mots-clés peuvent déclencher des faux positifs. Les exceptions vont dans `[allow]`, par serveur ou par règle.
+
+## Licence
+
+PteroGuard est distribué sous la licence [PolyForm Noncommercial 1.0.0](LICENSE.md).
+
+- **Usage non commercial** : libre et gratuit. Cela couvre l'usage personnel, l'apprentissage, la recherche, ainsi que les associations, les écoles et les organismes publics.
+- **Usage commercial** : nécessite une licence payante. C'est le cas, par exemple, si vous protégez avec PteroGuard un service d'hébergement payant, ou si vous l'intégrez à une offre commerciale. Pour l'obtenir, contactez Aragonite en ouvrant une issue sur ce dépôt.
