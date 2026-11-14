@@ -1,0 +1,19 @@
+# ptero-guard : surcharges de la configuration par défaut (voir DEFAULTS dans ptero_guard.py)
+# Le webhook Discord se met dans /etc/ptero-guard/webhook (une ligne, chmod 600).
+
+# Gèle automatiquement (cgroup.freeze, réversible) un serveur sur alerte critique.
+freeze_on_critique = false
+
+# Lien vers le panel dans les alertes, et conteneur Docker clamd (facultatif).
+# panel_url = "https://panel.exemple.fr"
+# clamd_container = "clamav"
+
+[thresholds]
+cpu_pct = 90
+cpu_minutes = 20
+tx_mbps = 150
+
+[allow]
+# Exceptions : "uuid" (serveur entier) ou "uuid:regle", ex. "00000000-0000-0000-0000-000000000000:cpu_soutenu"
+rules = []
+dst_ips = []

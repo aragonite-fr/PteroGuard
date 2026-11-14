@@ -1,0 +1,6 @@
+[Unit]
+Description=ptero-egress : mise à jour des listes Tor/pools
+
+[Service]
+Type=oneshot
+ExecStart=/opt/ptero-guard/egress-firewall.sh refresh

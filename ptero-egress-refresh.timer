@@ -1,0 +1,9 @@
+[Unit]
+Description=ptero-egress : rafraîchissement toutes les 6 h
+
+[Timer]
+OnBootSec=15min
+OnUnitActiveSec=6h
+
+[Install]
+WantedBy=timers.target

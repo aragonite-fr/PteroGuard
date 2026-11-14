@@ -1,0 +1,25 @@
+[Unit]
+Description=ptero-guard : détection d'activité illégale ou anormale sur Pterodactyl
+After=network-online.target docker.service wings.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /opt/ptero-guard/ptero_guard.py run
+Restart=always
+RestartSec=10
+Nice=10
+IOSchedulingClass=idle
+CPUQuota=50%
+MemoryMax=512M
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+ProtectKernelModules=yes
+ProtectControlGroups=no
+ReadWritePaths=/var/lib/ptero-guard /var/log/ptero-guard /sys/fs/cgroup
+ReadOnlyPaths=/var/lib/pterodactyl/volumes /var/lib/docker/containers
+
+[Install]
+WantedBy=multi-user.target

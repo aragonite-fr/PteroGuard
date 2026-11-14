@@ -1,0 +1,14 @@
+[Unit]
+Description=ptero-egress : filtrage sortant des conteneurs Pterodactyl (Tor, pools, plafond)
+After=docker.service ptero-guard.service
+Wants=docker.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/opt/ptero-guard/egress-firewall.sh apply
+ExecReload=/opt/ptero-guard/egress-firewall.sh refresh
+ExecStop=/opt/ptero-guard/egress-firewall.sh remove
+
+[Install]
+WantedBy=multi-user.target
