@@ -1,4 +1,4 @@
-Required Notice: Copyright (c) 2026 Aragonite (https://github.com/aragonite-fr)
+Required Notice: Copyright (c) 2026 Aragonite (https://github.com/aragonite-fr). Commercial licensing: contact@aragonite.fr
 
 # PolyForm Noncommercial License 1.0.0
 

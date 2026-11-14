@@ -70,4 +70,4 @@ Le réseau visé est celui de Wings par défaut : `pterodactyl0`, `172.18.0.0/16
 PteroGuard est distribué sous la licence [PolyForm Noncommercial 1.0.0](LICENSE.md).
 
 - **Usage non commercial** : libre et gratuit. Cela couvre l'usage personnel, l'apprentissage, la recherche, ainsi que les associations, les écoles et les organismes publics.
-- **Usage commercial** : nécessite une licence payante. C'est le cas, par exemple, si vous protégez avec PteroGuard un service d'hébergement payant, ou si vous l'intégrez à une offre commerciale. Pour l'obtenir, contactez Aragonite en ouvrant une issue sur ce dépôt.
+- **Usage commercial** : nécessite une licence payante. C'est le cas, par exemple, si vous protégez avec PteroGuard un service d'hébergement payant, ou si vous l'intégrez à une offre commerciale. Pour l'obtenir, écrivez à [contact@aragonite.fr](mailto:contact@aragonite.fr).
